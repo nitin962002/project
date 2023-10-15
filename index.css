@@ -1,0 +1,59 @@
+
+body{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.heading{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+.chatfine-text{
+    text-align: center;
+    color: yellow;
+}
+
+.chatfine-container{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.chatfine-box{
+    width:300px;
+    height:150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 20px;
+    padding:20px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.chatfine-box:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.chatfine-name p{
+    font-weight:bold;
+    text-align:center;
+}
+
+.chatfine-box p{
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px){
+.chatfine-container{
+    
+    display:flex;
+    flex-direction:column;
+}
+}
